@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JMM 341: Web Design - Set Up a Domain Name</title>
+    <link href="css/style.css" rel="stylesheet" media="screen" />
+    <link href="css/print.css" rel="stylesheet" media="print" />
+  </head>
+
+  <body id="top">
+
+    <header>
+      <h1>JMM 341: Web Design</h1>
+      <h2>Set Up a Domain Name</h2>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="home">Home</a></li>
+        <li><a href="javascript:window.print()">Print</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section>
+
+        <h3>Set Up a Domain Name</h3>
+
+        <p><small>Registering a domain name is required <em>only</em> for the final project.</small></p>
+
+        <article>
+          <p>Students with a valid <code>.edu</code> address can obtain a free ($9 value) <code>.me</code> domain name from <a href="https://nc.me/">Namecheap</a>. This document walks through the process of registering a domain name and linking it to a GitHub repository set to host static web pages.</p>
+
+          <ol class="setup">
+
+            <li>Log in to CaneLink and find your <code>umail.miami.edu</code> address. This e-mail address is automatically generated when you become a student; it is what you receive before a personalized alias is created. Under "Personal Information" click "Update E-mail Addresss". Take note of the "preferred e-mail address" &mdash; it should end with <code>umail.miami.edu</code>. Use this e-mail address when registering with Namecheap for your domain.</li>
+
+            <li>Visit <a href="https://nc.me">Namecheap</a>'s student registration page and choose a domain. For a professional portfolio, it is best to register something which identifies you, such as your first and last name or first initial and last name (i.e. <code>johnsmith.me</code>, <code>jsmith.me</code>).</li>
+
+            <li>Go through the registration process. When you reach the step where you are asked to select GitHub Pages or About.me, <strong>select GitHub pages</strong>.</li>
+
+            <li>After this selection, the page may appear to hang and not advance to the next step. If this happens, visit your GitHub account. You should see a new repository which did not exist previously; it has been created by Namecheap. If this repository exists, disregard the hanging page and move on to the next step.</li>
+
+            <li>Visit <a href="https://namecheap.com">Namecheap.com</a>. Log in.</li>
+
+            <li>Click "Domain List" in the menu on the left side of the page.</li>
+
+            <li>Next to your domain name, click the "Manage" button.</li>
+
+            <li>Click "Advanced DNS" in the menu bar.</li>
+
+            <li>If you set up your domain to use GitHub, your "A record" settings should match the detail below. You will only need to change your "CNAME record" (remember username is your GitHub username). Be sure to SAVE the records by clicking the green checkmark on the far right of each record.
+
+              <table class="domain">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Host</th>
+                    <th>Value</th>
+                    <th>TTL</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>192.30.252.153</td>
+                    <td>30 min</td>
+                  </tr>
+
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>192.30.252.154</td>
+                    <td>30 min</td>
+                  </tr>
+
+                  <tr>
+                    <td>CNAME</td>
+                    <td>www</td>
+                    <td>username.github.io</td>
+                    <td>30 min</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+
+            <li>Open Atom (or Brackets) and type your domain name (do not start it with www; i.e. domain.com) in a plain text file. Save this as "CNAME" (not CNAME.txt or CNAME.html -- just CNAME).</li>
+
+            <li>Add the CNAME file to the username.github.io repository on your computer, commit it and push it to GitHub.</li>
+
+            <li>See below for instructions on <a href="#testing-your-domain">testing your new domain</a>.</li>
+
+          </ol>
+        </article>
+
+        <article>
+          <h3>If you registered a domain name elsewhere</h3>
+
+          <p>You may have a created domain name with another registrar. Since it is impossible to know the details of every registrar's setup, you may need to read documentation to change your domain record so it points to your GitHub repository.</p>
+
+          <p>Ultimately, you need to provide the registrar with two "A" records and a "CNAME" record, which should be as follows (where username is your username).</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Host</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>A Record</td>
+                <td>@</td>
+                <td>192.30.252.153</td>
+              </tr>
+
+              <tr>
+                <td>A Record</td>
+                <td>@</td>
+                <td>192.30.252.154</td>
+              </tr>
+
+              <tr>
+                <td>CNAME</td>
+                <td>www</td>
+                <td>username.github.io</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>Once you have updated your records, open Atom (or Brackets) and type your domain name (do not start it with www; i.e. domain.com) in a plain text file. Save this as "CNAME" (not CNAME.txt or CNAME.html -- just CNAME).</p>
+
+          <p>Add the CNAME file to the username.github.io repository on your computer, commit it and push it to GitHub.</p>
+
+          <p>See below for instructions on <a href="#testing-your-domain">testing your new domain</a>.</p>
+        </article>
+
+        <article id="testing-your-domain">
+          <h3>Testing your domain</h3>
+
+          <p><strong>DO NOT VISIT THE DOMAIN NAME YOU JUST REGISTERED.</strong></p>
+
+          <p>There is a very long explanation as to why you should not do this. Fixing the problem involves using the command line / terminal to delete hidden files on your computer. A very computer-savvy person could probably handle this with ease, but if this is not you, just do not visit your domain name.</p>
+
+          <p>When your DNS (registrar) records are updated and you have pushed a CNAME file to the GitHub repository where your web site is stored, visit username.github.io (where username is your username).</p>
+
+          <p>If everything has been set up correctly, you will see the URL bar of the browser change from a github.io domain to <em>your</em> domain!</p>
+
+          <p><strong>If you receive a 404 (File Not Found) error:</strong> This is because you do not have an <code>index.html</code> file. (Remember, a server always looks for <code>index.html</code> if no file is specified as being part of the URL.) Look for another file which you know exists in the repository (perhaps <code>resume.html</code> from a previous project).</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="#top">Return to Top</a></p>
+    </footer>
+
+  </body>
+</html>

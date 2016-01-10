@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JMM 341: Web Design - GitHub Setup</title>
+    <link href="../css/style.css" rel="stylesheet" media="screen" />
+    <link href="../css/print.css" rel="stylesheet" media="print" />
+  </head>
+
+  <body id="top">
+
+    <header>
+      <h1>JMM 341: Web Design</h1>
+      <h2>Project: GitHub Setup</h2>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="home">Home</a></li>
+        <li><a href="javascript:window.print()">Print</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section>
+        <h3>Introduction</h3>
+
+        <article>
+          <h4>DUE DATE: Friday, February 12, 2015, 3 p.m.</h4>
+
+          <p>The purpose of this exercise is to get you familiar with <a href="http://github.com/">GitHub</a> and <a href="http://desktop.github.com/">GitHub Desktop</a>. It is also designed to prepare the repository you will submit projects to.</p>
+
+          <p>By now, your computer should be set up. This includes having installed GitHub Desktop and registering for a GitHub account. If you have not done this, please review <a href="../getting-started.html">Getting Started</a>.</p>
+
+          <p>If you can follow instructions (and being at a top university, you should be able to), this should be an easy assignment. Print out this page and mark off each step as you finish it. This will provide you with an assurance that you have completed what is being asked.</p>
+        </article>
+
+
+        <article>
+          <h4>Before You Begin</h4>
+
+          <p>Make sure you have completed the following:</p>
+
+          <ul class="setup">
+            <li>Set up your GitHub user profile. Include your <strong>full name</strong> (i.e. John Smith) and a profile picture. This option is found under "Settings" in the top, right corner when logged in to GitHub.</li>
+            <li>Validate your e-mail address with GitHub.</li>
+          </ul>
+
+          <p>If you fail to complete the first task listed above, I will not know who submitted the assignment and <strong>you will receive a zero (0)</strong>. Your username does not constitute your full name. Students with common names may not have the luxury of registering their full name as a username.</p>
+
+          <p>If you do not complete the latter, your web page will not work and <strong>you will receive a zero (0)</strong>. And you will have to do this again in order to properly submit the first project.</p>
+        </article>
+
+
+        <article>
+          <h4>Grading</h4>
+
+          <p>This assignment is due <strong>Friday, February 12, 2015 at 3 p.m.</strong> If it is submitted at Sept. 25, 2015 at 3:00:01 p.m., it is late and <strong>you will receive a zero (0)</strong>.</p>
+
+          <p>Each section of this exercise is worth five (5) points. Failure to complete the section(s) as instructed will result in a zero (0).</p>
+
+          <p>If you are concerned about the content being submitted, please do not hesitate to view examples I have provided in my account. These provide an example of a correctly submitted assignment. (Do not copy and paste the code and/or content; that's forbidden and will be deemed plagiarism.)</p>
+
+          <ul>
+            <li>my github-setup: <a href="https://github.com/thegeekprof/github-setup">repository</a>, <a href="https://github.com/umiami-web-design/github-setup/pull/1">pull request</a></li>
+            <li>thegeekprof.github.io: <a href="https://github.com/thegeekprof/thegeekprof.github.io">repository</a>, <a href="http://thegeekprof.github.io">web site</a></li>
+          </ul>
+        </article>
+      </section>
+
+
+      <section>
+        <h3>What is Git? What is GitHub?</h3>
+
+        <p><strong>git</strong> is version control software. It tracks changes you make to a file. Using git while doing web design is helpful because it forces you break down the process into manageable steps and logically group changes.</p>
+
+        <p>When you make a mistake, you can 'roll back' to the last step when you know everything worked. For this reason, you should only "commit" changes in which code works.</p>
+
+        <p><strong>GitHub</strong> is a web site where people can store open-source code for free. GitHub can also serve as a host for simple, static web sites, which is what we create for in class.</p>
+
+        <p>We will demonstrate how you can incorporate git into your workflow during a live coding session. For now, become familiar with the basic process of committing changes and pushing them to GitHub.</p>
+
+        <p>If the terminology used through this assignment seems confusing, please refer to the <a href="https://help.github.com/articles/github-glossary/">GitHub Glossary</a>. Important terms are also linked throughout these instructions. You may also want to consult GitHub's extensive <a href="https://help.github.com/">help</a> section and GitHub Desktop's <a href="https://help.github.com/desktop/">user guides and FAQ</a>.
+
+        <p>Want a warm-up?  Try GitHub's walkthrough, <a href="https://guides.github.com/introduction/getting-your-project-on-github/">Getting your project on GitHub</a> or the built-in tutorial in GitHub Desktop.</p>
+      </section>
+
+
+      <section>
+        <h3>Part I: Working with GitHub &amp; GitHub Desktop (5 points)</h3>
+
+        <ol class="setup">
+          <li>In the top right corner of the <a href="https://github.com/umiami-web-design/github-setup">github-setup</a> <a href="https://help.github.com/articles/github-glossary/#repository">repository</a> (repo), click '<a href="https://help.github.com/articles/github-glossary/#fork">Fork</a>'. This will create a copy of the <code>github-setup</code> repository in your GitHub account.
+
+          After GitHub redirects you to the forked copy, you should see: <code>username/github-setup</code> (where username is <em>your username</em>) and a message below which says "forked from <code>umiami-web-design/github-setup</code>".</li>
+
+          <li><a href="https://help.github.com/articles/github-glossary/#clone">Clone</a> this forked repository to GitHub Desktop. To the left of "Download ZIP" is a button which looks has an arrow pointing down on a computer screen. Click this to clone the repository using GitHub Desktop. (If you receive an alert, "External Protocol Request," click "Launch Application.") When GitHub Desktop appears and prompts you "Clone", do so. Make sure you note where you are saving this repository on your computer.</li>
+
+          <li>To access the repository you just cloned, you may navigate through the directories using your computer's Finder. You can also access the file by right-clicking (ctrl-click) on <code>github-setup</code> in the left column. Choose "Open in Finder." (If you are using Atom, try choosing "Open in Atom.") Open <code>q-and-a.txt</code>. Answer the questions using your text editor. Save the file.</li>
+
+          <li>Return to GitHub Desktop. You should see a note at the top which reads "1 uncommitted change". The panel just right of the left column shows which files have changed (in this case, <code>q-and-a.txt</code>) with a checkbox next to it. The panel on the right side of GitHub Desktop shows the changes made to <code>q-and-a.txt</code>. When you add to a file, GitHub Desktop displays these changes in green; when you delete, changes are pink.</li>
+
+          <li>Below the list of files changed, fill in the "summary" field. It can be something simple such as, "Answered questions." Always make your commit summary descriptive. ("Made a change" isn't very helpful to someone who has cloned a repo of your writing, code, etc.) The "description" field is optional, but can be used to provide more detail if necessary. If everything is set &mdash; the answers in your file are correct, the summary is descriptive &mdash; click "Commit to master." This locks the changes in place.</li>
+
+          <li>At this point, you could make more changes to files, commit them, make more changes and commit them... or, you can <a href="https://help.github.com/articles/github-glossary/#push">push</a> the committed changes to GitHub. Click "Sync" in the top right corner. (If you receive a message to allow your computer access to a keychain, click "Allow.")</li>
+
+          <li>Return to your web browser and view the <code>github-status</code> repository you forked into <em>your GitHub account</em>. (This may still be displayed in your browser; if so, just refresh the page.) You should see the <code>q-and-a.txt</code> file has been updated. If you select it, you will see the changes.</li>
+
+          <li>In the <code>username/github-setup</code> repository, above the file listing a similar message should be present: "This branch is 1 commit ahead of umiami-web-design:master." This means you have made a change which has not yet been picked up by the (my) master <code>github</code> repository you made a fork of. Click the link next to the message which reads "<a href="https://help.github.com/articles/github-glossary/#pull-request">Pull Request</a>". This will take you a page which allows you to compare your updated version with the master version. If everything appears correctly &mdash; again, the answers in your file are correct, the summary is descriptive &mdash; click "Create pull request." (You may be prompted to modify your commit message; simply click "Create pull request" again.)</li>
+
+          <li>Notice you have been re-directed to the <code>umiami-web-design/github-status</code> repository. If you click on the pull request icon in the right column, you should see a list of pull requests, including your own. This means you have successfully submitted Part I of this exercise!</li>
+        </ol>
+      </section>
+
+
+      <section>
+        <h3>Part II: Set up your web site (5 points)</h3>
+
+        <ol class="setup">
+          <li>On GitHub, create a new repository. Name it <code>username.github.io</code> where username is <em>your GitHub username</em>. Type the username <em>exactly</em> as it appears as GitHub is case sensitive. Click the checkbox next to 'Initialize this repository with a README'.</li>
+
+          <li>Click the clone in desktop icon (the same one you used to clone the repository in step one). When prompted to clone the repository, make sure "Clone As:" is <code>username.github.io</code> (again, where username is <em>your username</em>). Make note of the directory you are saving this cloned repo in. You will need to know this later.</li>
+
+          <li>Access the cloned repository on your computer. Open the directory (or README file) in Atom. This should get you set up to work in the correct directory.</li>
+
+          <li>Create a simple web page and save it as <code>index.html</code>. Remember to include all parts of a proper web page: <code>doctype</code>, <code>html</code>, <code>head</code>, <code>meta</code>, <code>title</code> and <code>body</code> tags.</li>
+
+          <li>Add your name wrapped in an <code>h1</code> tag and a <code>p</code> tag with a short introduction, something like "Hi, this is my web page." It does not need to be complex.</li>
+
+          <li>Remember the <code>octocat.png</code> file from the <code>github-setup</code> repository? Move this file from the <code>github-setup</code> directory into the <code>username.github.io</code> directory on your computer. Add the <code>octocat.png</code> to <code>index.html</code> using an <code>img</code> tag. (Do not forget the <code>alt</code> attribute!)</li>
+
+          <li>As you did in the first part of this exercise, commit the changes using GitHub Desktop. You should be committing two files: <code>index.html</code> and <code>octocat.png</code>. GitHub Desktop should recognize there are "uncommitted changes". Provide a summary for the changes. Click "Commit to master". Then push the changes to GitHub by clicking "Sync."</li>
+
+          <li>Return to your web browser and view your <code>username.github.io</code> repository. The files should appear.</li>
+
+          <li>Open a new tab in your web browser and visit <code>http://username.github.io</code> (again, where username is your username). Your simple web page should appear.</li>
+
+        </ol>
+
+        <p>That's it! You have published your first web page!</p>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="#top">Return to Top</a></p>
+    </footer>
+  </body>
+</html>

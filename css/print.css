@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+
+* {
+  color: #000;
+  background: transparent;
+}
+
+@page {
+  margin: 0.5in;
+}
+
+body {
+  font-family: "Droid Serif", serif;
+  font-size: 12pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+ul li {
+  line-height: 1.5;
+}
+
+p q {
+  font-style: italic;
+}
+
+address {
+  margin-top: 2em;
+  font-style: normal;
+}
+
+address h3,
+address p,
+address ul {
+  margin: 0;
+}
+
+table {
+  border-top: 1px solid #222;
+  border-left: 1px solid #222;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border-bottom: 1px solid #222;
+  border-right: 1px solid #222;
+  padding: 0.5em;
+}
+
+table th,
+table tr:nth-child(even) {
+  background: #eee;
+}
+
+header h1, header h1 + h2 {
+  margin: 0;
+}
+
+form div {
+  margin-top: 0.5in;
+}
+
+form label {
+  display: inline-block;
+  font-size: 14pt;
+  font-weight: bold;
+  width: 1.5in;
+}
+
+form input {
+  border: 0;
+  border-bottom: 1px solid #999;
+  font-size: 14pt;
+  width: 75%;
+}
+
+#signed {
+  display: inline;
+}
+
+.break {
+  page-break-before: always;
+}
+
+a.source:after {
+  content: "(" attr(href) ")";
+}
+
+.github-setup li {
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+
+/* hidden elements */
+
+nav,
+iframe,
+.details {
+  display: none;
+}

@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:400,700);
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin: 4em; /* 18px * 2 */
+}
+
+a, a:visited {
+  color: rgb(12,95,193);
+}
+
+a:hover {
+  color: rgb(213,56,5);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+p q {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+code {
+  padding: 0.1em 0.25em;
+  background: #eee;
+}
+
+ul li {
+  line-height: 1.5;
+}
+
+
+/* navigation */
+
+nav ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  padding-right: 1em;
+}
+
+nav ul li a.home:before {
+  content: "\2190" " ";
+}
+
+nav ul li img {
+  width: 12px;
+}
+
+
+/* structure */
+
+header {
+  margin-bottom: 1em;
+}
+
+header h1,
+header h2 {
+  margin: 0;
+}
+
+main {
+  width: 35em;
+}
+
+footer p > a:before {
+    content: "\2191" " ";
+}
+
+
+/* address */
+
+address {
+  margin-top: 2em;
+  font-style: normal;
+}
+
+address h3,
+address p,
+address ul {
+  margin: 0;
+}
+
+
+/* iframe */
+
+iframe {
+  border: 1px solid #222;
+}
+
+
+/* table */
+
+table {
+  border-top: 1px solid #222;
+  border-left: 1px solid #222;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border-bottom: 1px solid #222;
+  border-right: 1px solid #222;
+  padding: 0.5em;
+}
+
+table th,
+table tr:nth-child(even) {
+  background: #eee;
+}
+
+
+/* form */
+
+form {
+  margin-top: 2em;
+}
+
+form div {
+  margin-bottom: 2em;
+}
+
+form label {
+  font-weight: bold;
+  display: inline-block;
+  width: 8em;
+}
+
+form input {
+  margin-top: 2em;
+  width: 50%;
+}
+
+
+/* id */
+#signed {
+  display: none;
+}
+
+
+/* classes */
+.details {
+  color: #ccc;
+}
+
+.setup li {
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.setup table {
+  margin-top: 1em;
+}
+
+.inline-icon {
+  width: 32px;
+  vertical-align: text-bottom;
+}
+
+
+
+@media (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 150%;
+  }
+
+  h2 {
+    font-size: 130%;
+  }
+
+  main {
+    width: 100%;
+  }
+}
