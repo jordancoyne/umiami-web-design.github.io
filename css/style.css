@@ -103,6 +103,8 @@ address ul {
 
 iframe {
   border: 1px solid #222;
+  width: 620px;
+  height: 349px;
 }
 
 
@@ -192,5 +194,10 @@ form input {
 
   main {
     width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
   }
 }
