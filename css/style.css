@@ -192,6 +192,10 @@ form input {
     font-size: 130%;
   }
 
+  nav a[href$="window.print()"] {
+    display: none;
+  }
+
   main {
     width: 100%;
   }
